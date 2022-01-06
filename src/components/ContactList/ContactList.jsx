@@ -30,11 +30,6 @@ ContactList.propTypes = {
   ).isRequired,
 };
 
-//  const filterNormalized = filterContact.toLowerCase();
-//  const filteredContacts = contacts.filter(contact =>
-//    contact.name.toLowerCase().includes(filterNormalized),
-//  );
-
 const mapStateToProps = state => {
   const { filter, items } = state.contacts;
   const filterNormalized = filter.toLowerCase();
